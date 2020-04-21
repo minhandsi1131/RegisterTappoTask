@@ -29,7 +29,7 @@ export default class RegisterScreen extends Component {
         <View >
         <Image
           source={logo}
-          style={{ width: 191, height: 59, alignSelf: "center" }}
+          style={{ width: 191, height: 59, alignSelf: "center",marginTop:70}}
         />
         <Text style={styles.textBold}>Merchain</Text>
         <Text style={styles.textSub}>
@@ -74,7 +74,7 @@ export default class RegisterScreen extends Component {
               flexDirection: "row",
               alignItems: "center",
               alignSelf: "center",
-              marginTop: 90,
+              marginTop: 70,
             }}
           >
             <Text style={{ color: "gray" }}>Not on Tappo yet? </Text>
