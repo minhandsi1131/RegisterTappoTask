@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "#000",
     fontWeight: "bold",
+    marginTop:10
   },
   textSub: {
     fontSize: 16,
