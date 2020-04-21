@@ -6,7 +6,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   TextInput,
-  SafeAreaView,
+  SafeAreaView,ScrollView
 } from "react-native";
 import logo from "../assets/logo.png";
 import "react-native-gesture-handler";
@@ -24,7 +24,9 @@ export default class RegisterScreen extends Component {
     const { emailplace, passwordplace, email, password } = this.state;
     const { navigation } = this.props;
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.container} >
+      <ScrollView>
+        <View >
         <Image
           source={logo}
           style={{ width: 191, height: 59, alignSelf: "center" }}
@@ -81,6 +83,8 @@ export default class RegisterScreen extends Component {
             </Text>
           </View>
         </TouchableOpacity>
+        </View>
+        </ScrollView>
       </SafeAreaView>
     );
   }

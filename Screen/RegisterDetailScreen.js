@@ -6,7 +6,7 @@ import {
   TextInput,
   TouchableOpacity,
   Image,
-  SafeAreaView,
+  SafeAreaView,ScrollView
 } from "react-native";
 import CheckBox from "@react-native-community/checkbox";
 import recapcha from "../assets/recapcha.png";
@@ -26,7 +26,6 @@ export default class RegisterDetailScreen extends Component {
 
   render() {
     const {
-      value,
       emailplace,
       passwordplace,
       passwordagain,
@@ -37,7 +36,9 @@ export default class RegisterDetailScreen extends Component {
     } = this.state;
     const { navigation } = this.props;
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.container} >
+         <ScrollView>
+           <View >
         <Text style={styles.textBold}> Fill in your details: </Text>
         <View>
           <Text style={styles.textTitleInput}>Email</Text>
@@ -93,6 +94,8 @@ export default class RegisterDetailScreen extends Component {
             Next
           </Text>
         </TouchableOpacity>
+        </View>
+        </ScrollView>
       </SafeAreaView>
     );
   }
